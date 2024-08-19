@@ -30,17 +30,21 @@ line-length = 120
 # チェックするルール
 select = ["ALL"]
 ignore = [
-    "D415", # First line should end with a period, question mark, or exclamation point
-    "D400", # First line should end with a period
-    "RUF002", # Docstring contains ambiguous `：` (FULLWIDTH COLON). Did you mean `:` (COLON)?
     "ANN401", # Dynamically typed expressions (typing.Any) are disallowed in `(function name)`
+    "D400", # First line should end with a period
+    "D415", # First line should end with a period, question mark, or exclamation point
     "FA102", # Missing `from __future__ import annotations`, but uses PEP 604 union
+    "FIX002", # Line contains TODO, consider resolving the issue
+    "N802", # Function name `(function name)` should be lowercase
+    "N803", # Argument name `(argument name)` should be lowercase
+    "N806", # Variable `(variable name)` in function should be lowercase
+    "N816", # Variable `(variable name)` in global scope should not be mixedCase
+    "PLR0913", # Too many arguments in function definition (7 > 5)
+    "RUF002", # Docstring contains ambiguous `：` (FULLWIDTH COLON). Did you mean `:` (COLON)?
+    "RUF003", # Comment contains ambiguous `（` (FULLWIDTH LEFT PARENTHESIS). Did you mean `(` (LEFT PARENTHESIS)?
     "S101", # Use of `assert` detected
     "T201", # `print` found
-    "N816", # Variable `(variable name)` in global scope should not be mixedCase
-    "N802", # Function name `(function name)` should be lowercase
-    "N806", # Variable `(variable name)` in function should be lowercase
-    "RUF003", # Comment contains ambiguous `（` (FULLWIDTH LEFT PARENTHESIS). Did you mean `(` (LEFT PARENTHESIS)?
+    "TD003", # Missing issue link on the line following this TODO
 ]
 
 [tool.ruff.pydocstyle]
