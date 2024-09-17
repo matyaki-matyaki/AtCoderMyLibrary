@@ -33,6 +33,7 @@ ignore = [
     "ANN401", # Dynamically typed expressions (typing.Any) are disallowed in `(function name)`
     "D400", # First line should end with a period
     "D415", # First line should end with a period, question mark, or exclamation point
+    "ERA001", # Found commented-out code
     "FA102", # Missing `from __future__ import annotations`, but uses PEP 604 union
     "FIX002", # Line contains TODO, consider resolving the issue
     "N802", # Function name `(function name)` should be lowercase
