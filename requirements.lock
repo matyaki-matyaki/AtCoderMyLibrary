@@ -10,10 +10,10 @@
 
 -e file:.
 mypy==1.10.0
-    # via atcoder
+    # via atcodermylibrary
 mypy-extensions==1.0.0
     # via mypy
 numpy==2.1.1
-    # via atcoder
+    # via atcodermylibrary
 typing-extensions==4.11.0
     # via mypy
