@@ -1,4 +1,4 @@
-"""Normal UnionFind"""
+"""UnionFind"""
 from collections import defaultdict
 
 
